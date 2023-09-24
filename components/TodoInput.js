@@ -11,10 +11,7 @@ export default function TodoInput({visible,onAddTodo,onCancel}) {
     <Modal
         animationType="slide"
         visible={visible}
-        onRequestClose={() => {
-          Alert.alert('Modal has been closed.');
-          setModalVisible(!modalVisible);
-        }}>
+        >
         <View style={styles.centeredView}>
             <Image style={styles.image} source={require('../assets/images/logo.png')}/>
             <TextInput style={styles.textInput} placeholder="Add something to the to-do list :)"
